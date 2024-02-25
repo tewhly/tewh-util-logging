@@ -5,11 +5,11 @@
   </PropertyGroup>
   <ItemGroup>
     <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
-      <_Parameter1>Util.Logging._tests.unit</_Parameter1>
+      <_Parameter1>Util.Logging.Tests.Unit</_Parameter1>
     </AssemblyAttribute>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Logging._abstractions\Logging._abstractions.csproj" />
+    <ProjectReference Include="..\Logging\Logging.csproj" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="code\" />

@@ -1,0 +1,11 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Util.Logging.Testing</AssemblyName>
+    <RootNamespace>Util.Logging.Testing</RootNamespace>
+    <PackageReferences-xx_Testing>true</PackageReferences-xx_Testing>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Logging\Logging.csproj" />
+    <ProjectReference Include="..\Logging._base\Logging._base.csproj" />
+  </ItemGroup>
+</Project>
