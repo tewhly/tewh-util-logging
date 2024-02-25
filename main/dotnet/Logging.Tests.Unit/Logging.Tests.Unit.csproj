@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Util.Logging.Tests.Unit</AssemblyName>
+    <RootNamespace>Util.Interaction.Messaging.Tests.Unit</RootNamespace>
+    <PackageReferences-xx_Tests_Unit>true</PackageReferences-xx_Tests_Unit>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Logging._abstractions\Logging._abstractions.csproj" />
+    <ProjectReference Include="..\Logging._base\Logging._base.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="code\" />
+  </ItemGroup>
+</Project>

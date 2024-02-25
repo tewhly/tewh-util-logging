@@ -1,0 +1,29 @@
+﻿<Project>
+  <Import Project="./Packages-Configure.props" />
+  <Import Project="./PackageReferences.props" />
+
+  <!-- Microsoft -->
+  <ItemGroup>
+    <PackageVersion Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.2" />
+    <PackageVersion Include="Microsoft.CodeAnalysis.Common" Version="4.0.1" />
+  </ItemGroup>
+  <PropertyGroup>
+    <PackageVersion_Microsoft_CodeAnalysis_CSharp_XX>4.0.1</PackageVersion_Microsoft_CodeAnalysis_CSharp_XX>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageVersion Include="Microsoft.CodeAnalysis.CSharp" Version="$(PackageVersion_Microsoft_CodeAnalysis_CSharp_XX)" />
+    <PackageVersion Include="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="$(PackageVersion_Microsoft_CodeAnalysis_CSharp_XX)" />
+  </ItemGroup>
+
+  <!-- Testing -->
+  <ItemGroup>
+    <PackageVersion Include="FluentAssertions" Version="6.8.0" />
+    <PackageVersion Include="Microsoft.NET.Test.Sdk" Version="16.8.3" />
+    <PackageVersion Include="Moq" Version="4.16.0" />
+    <PackageVersion Include="NBuilder" Version="6.1.0" />
+    <PackageVersion Include="Verify.SourceGenerators" Version="2.1.0" />
+    <PackageVersion Include="Verify.Xunit" Version="20.3.2" />
+    <PackageVersion Include="xunit" Version="2.4.2" />
+    <PackageVersion Include="xunit.runner.visualstudio" Version="2.4.3" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="./_shared/dotnet/Packages.props" />
+</Project>

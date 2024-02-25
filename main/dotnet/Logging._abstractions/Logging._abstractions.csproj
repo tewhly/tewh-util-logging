@@ -1,0 +1,9 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Util.Logging._abstractions</AssemblyName>
+    <RootNamespace>Util.Logging</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="code\" />
+  </ItemGroup>
+</Project>

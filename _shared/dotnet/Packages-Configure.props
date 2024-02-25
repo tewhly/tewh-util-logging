@@ -1,0 +1,5 @@
+<Project>
+  <ItemGroup>
+    <PackageVersion Include="Microsoft.VisualStudio.SlnGen" Version="11.1.0" />
+  </ItemGroup>
+</Project>

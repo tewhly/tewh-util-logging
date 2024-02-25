@@ -1,0 +1,12 @@
+abstract: "Tewh Util Logging."
+authors:
+- family-names: "Preuer"
+  given-names: "Stefan"
+  orcid: "https://orcid.org/0009-0005-3756-3995"
+cff-version: 1.2.0
+keywords:
+  - "tewhcents"
+license: MIT
+message: "If you use this software, please cite it using these metadata."
+repository-code: "https://github.com/tewhcents/tewh-util-logging"
+title: "Tewh Util Logging"

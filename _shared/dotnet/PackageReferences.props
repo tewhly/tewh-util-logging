@@ -1,0 +1,32 @@
+<Project>
+  <!-- # xx.Testing -->
+  <ItemGroup Condition=" '$(PackageReferences-xx_Testing)' == 'true' ">
+    <PackageReference Include="FluentAssertions" />
+    <PackageReference Include="Moq" />
+    <PackageReference Include="xunit" />
+  </ItemGroup>
+
+  <!-- # xx.Tests.Unit -->
+  <PropertyGroup Condition=" '$(PackageReferences-xx_Tests_Unit)' == 'true' ">
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(PackageReferences-xx_Tests_Unit)' == 'true' ">
+    <PackageReference Include="FluentAssertions" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="Moq" />
+    <PackageReference Include="xunit" />
+    <PackageReference Include="xunit.runner.visualstudio" />
+  </ItemGroup>
+
+  <!-- # xx.Tests -->
+  <PropertyGroup Condition=" '$(PackageReferences-xx_Tests)' == 'true' ">
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+  <ItemGroup Condition=" '$(PackageReferences-xx_Tests)' == 'true' ">
+    <PackageReference Include="FluentAssertions" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="Moq" />
+    <PackageReference Include="xunit" />
+    <PackageReference Include="xunit.runner.visualstudio" />
+  </ItemGroup>
+</Project>

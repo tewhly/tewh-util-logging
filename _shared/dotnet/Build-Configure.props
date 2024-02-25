@@ -1,0 +1,10 @@
+<Project>
+  <!-- # SlnGen -->
+  <PropertyGroup>
+    <SlnGenLaunchVisualStudio>false</SlnGenLaunchVisualStudio>
+    <SlnGenSolutionFileFullPath>$(MSBuildThisFileDirectory)../../tewh-util-logging.sln</SlnGenSolutionFileFullPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.SlnGen" />
+  </ItemGroup>
+</Project>

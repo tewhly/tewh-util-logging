@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>Util.Logging._base</AssemblyName>
+    <RootNamespace>Util.Logging</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
+      <_Parameter1>Util.Logging._tests.unit</_Parameter1>
+    </AssemblyAttribute>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Logging._abstractions\Logging._abstractions.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="code\" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <!-- # Core -->
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <LangVersion>12</LangVersion>
+    <Nullable>enable</Nullable>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <UseAppHost>false</UseAppHost>
+  </PropertyGroup>
+
+  <!-- # Language -->
+  <PropertyGroup>
+    <ImplicitUsings>disable</ImplicitUsings>
+  </PropertyGroup>
+
+  <!-- # Compilation -->
+  <PropertyGroup>
+    <!--
+      Suppress warning due to multiple central package management definitions in context of repo solution from repo modules local ones.
+      See "https://devblogs.microsoft.com/nuget/introducing-central-package-management/#warning-when-using-multiple-package-sources"
+      -->
+    <NoWarn>$(NoWarn);NU1507</NoWarn>
+
+    <!--
+      Supress warnings due to: CS8981 - The type name only contains lower-cased ascii characters.
+      Reason: Protobuf generates type names violating this.
+      -->
+    <NoWarn>$(NoWarn);CS8981</NoWarn>
+  </PropertyGroup>
+
+  <!-- # Packages -->
+  <!-- ## Package creation -->
+  <PropertyGroup>
+    <IsPackable>true</IsPackable>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <!-- ## Package consumption -->
+  <PropertyGroup>
+    <DisableImplicitNuGetFallbackFolder>false</DisableImplicitNuGetFallbackFolder>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
+    <RestoreIgnoreFailedSource>true</RestoreIgnoreFailedSource>
+    <RestorePackagesWithLockFile>false</RestorePackagesWithLockFile>
+    <RestoreLockedMode>false</RestoreLockedMode>
+  </PropertyGroup>
+
+  <!-- # Code analysis -->
+  <PropertyGroup>
+    <AnalysisLevel>latest</AnalysisLevel>
+    <AnalysisMode>AllEnabledByDefault</AnalysisMode>
+    <CodeAnalysisTreatWarningsAsErrors>false</CodeAnalysisTreatWarningsAsErrors>
+    <EnableNETAnalyzers>true</EnableNETAnalyzers>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+  </PropertyGroup>
+  <ItemGroup>
+    <GlobalAnalyzerConfigFiles Include="$(MSBuildThisFileDirectory).globalconfig" />
+  </ItemGroup>
+
+  <Import Project="./Build-Configure.props" />
+</Project>
